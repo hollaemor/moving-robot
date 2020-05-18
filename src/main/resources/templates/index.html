@@ -152,7 +152,7 @@
                         <i class="fas fa-bomb"></i> <strong>{{errorMessage}}</strong>
                     </div>
                 </div>
-                <div>
+                <div id="gridHolder">
                     <div th:each="i : ${#numbers.sequence(1, rows)}">
                         <div th:each="j: ${#numbers.sequence(1, columns)}" class="cell">    
                             <span th:id="${#strings.concat('cell-',i-1, '-', j-1)}" class="cell-span">&nbsp;</span>        

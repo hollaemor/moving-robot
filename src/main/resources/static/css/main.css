@@ -110,3 +110,10 @@ header h3 i {
   color: red;
   font-size: 1.2em;
 }
+
+#gridHolder {
+height: 94%;
+width: 100%;
+overflow-y: auto;
+overflow-x: auto;
+}

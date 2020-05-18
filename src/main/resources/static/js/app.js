@@ -27,7 +27,6 @@ var app = new Vue({
         clearSteps: function () {
             this.instructions = [];
             this.clear();
-            this.errorMessage = '';
             this.direction = '';
             this.startingSteps = 0;
             this.movementSteps = 0;
@@ -63,7 +62,7 @@ var app = new Vue({
             for (var i = 0; i < cells.length; i++) {
                 cells[i].innerHTML = '&nbsp;';
             }
-
+            this.errorMessage = '';
         },
         getArrow: function (direction) {
             switch (direction.toLowerCase()) {
